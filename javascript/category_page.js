@@ -219,52 +219,23 @@ mediaquery_tablet.addEventListener("change", tablet_media_query)
 
 for (let i=0; i<right.length; i++){
     right[i].addEventListener("click",function(){
-        if (i==2){
-            ratings.scrollBy({
-                top: 0,
-                left: 50,
-                behavior: "smooth"
-            })
-            comment_container.scrollBy({
-                top: 0,
-                left: 50,
-                behavior: "smooth"
-            })
-        }
-        else {
             fig_container[i].scrollBy({
                 top: 0,
                 left: 50,
                 behavior: "smooth"
-            })
-        }
-    })
+            })})
+        
     left[i].addEventListener("click",function(){
-        if (i==2){
-            ratings.scrollBy({
-                top: 0,
-                left: -50,
-                behavior: "smooth"
+        fig_container[i].scrollBy({
+            top: 0,
+            left: -50,
+            behavior: "smooth"
             })
-            comment_container.scrollBy({
-                top: 0,
-                left: -50,
-                behavior: "smooth"
-            })
-        }
-        else {
-            fig_container[i].scrollBy({
-                top: 0,
-                left: -50,
-                behavior: "smooth"
-            })
-        }
     })
+
+
+
+
+
+
 }
-
-
-
-
-
-
-
