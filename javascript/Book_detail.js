@@ -98,7 +98,7 @@ const phone_collapsed =
     `
 const image_navigation=document.getElementById("#image_navigation")
 const image =document.querySelectorAll(".image")
-const book_image=["../photo/first_image.png","../photo/second_image.png", "../photo/third_image.png"]
+const book_image=["photo/first_image.png","photo/second_image.png", "photo/third_image.png"]
 const img=document.querySelectorAll(".img")
 const main_image = document.getElementById("main_image")
 const book_format=document.querySelectorAll(".book_format")
