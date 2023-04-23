@@ -24,17 +24,17 @@ const customer_comment = document.querySelector(".customer_comment")
 const customer_review = document.getElementById("customer_review")
 const left_review = document.querySelector(".left_review")
 const right_review = document.querySelector(".right_review")
-const carousel_array =[`<div class="element" style="background-image: url(../photo/book_background.png); background-size:cover">
+const carousel_array =[`<div class="element" style="background-image: url(photo/book_background.png); background-size:cover">
                             <div class="textbox">Welcome To The Altria Bookstore</div>
                         </div>`, 
-                        `<div class="element" style="background-image: url(../photo/business_background.png); background-size:cover"> 
+                        `<div class="element" style="background-image: url(photo/business_background.png); background-size:cover"> 
                             <div class="textbox">Welcome To The Altria Bookstore</div>
                         </div>`,
-                        `<div class="element" style="background-image: url(../photo/literature_background.png); background-size:cover">
+                        `<div class="element" style="background-image: url(photo/literature_background.png); background-size:cover">
                             <div class="textbox">Welcome To The Altria Bookstore</div>
                         </div>`,
                         `<div class="element">
-                            <video src="../photo/y2mate.com - Rick Astley  Never Gonna Give You Up Official Music Video_720p.mp4" controls="control autoplay"></video>
+                            <video src="photo/y2mate.com - Rick Astley  Never Gonna Give You Up Official Music Video_720p.mp4" controls="control autoplay"></video>
                         </div>`]
 
 
