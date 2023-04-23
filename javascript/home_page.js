@@ -280,7 +280,7 @@ function read_more_less(){
             read_more.style.visibility="visible"
             let x = customer_review.clientHeight 
             let y = comment_container.clientHeight
-            let z = customer_comment.clientHeight
+            
             let before_height = x.toString() + "px"
             let before_height_container = y.toString() + "px"
             read_more.addEventListener("click",function(){
