@@ -6,7 +6,7 @@
 body{
     min-height: 100vh;
     min-width: 100vw;
-    background-image:  url(../photo/../photo/indieground-vintagepaper-textures-05.jpg);
+    background-image:  url(photo/indieground-vintagepaper-textures-05.jpg);
     background-size: cover;
     overflow-x: hidden;
     display: flex;
@@ -20,7 +20,7 @@ input{
 }
 #announcement{
     height: 4vh;
-    background-image: linear-gradient(to right, rgba(114, 59, 33, 0.521), rgb(162, 38, 38), rgba(54, 44, 44, 0.663)), url(../photo/logo_background.png);
+    background-image: linear-gradient(to right, rgba(114, 59, 33, 0.521), rgb(162, 38, 38), rgba(54, 44, 44, 0.663)), url(photo/logo_background.png);
     display: flex;
     align-items: center;
     background-size: cover;
