@@ -673,15 +673,20 @@ footer{
 
     #customer_review{
         flex-direction: column;
-        height: 60vh;
+        height: 40vh;
 
     }
     .rating_container{
         width: 100%;
-        height: 80vh;
+        height: 124px;
+        
     }
     .customer_comment{
         width: 100%;
+        height: calc(40vh - 124px) ;
+    }
+    .comment_container{
+        height: calc(40vh - 124px 10px - 42px);
     }
     footer{
         flex-direction: column;
