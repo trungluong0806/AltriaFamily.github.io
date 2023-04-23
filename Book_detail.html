@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Book_detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header id="announcement" style="display: flex; justify-content: center;">
+        <div style="color: rgba(255, 255, 0, 0.73);">International Literature Day: 50% off for all literature books</div>
+    </header>
+    <header class="menu">
+        <div id="upper_heading">
+            <div id="logo_container">
+                <h1>The Altria Family</h1>
+            </div>
+            
+            <div id="three_bar_dropdown_icon">
+                <div id="mid_bar"></div>
+            </div>
+        </div>
+        
+        <div id="lower_heading">
+            
+            <nav id="head_nav">
+                <div class="nav_item"><a href="index.html">Home</a></div>
+                <div class="nav_item" id="categorical"></div>
+                <div class="nav_item">Notebooks</div>
+                <div class="nav_item">Antiques</div>
+                <div class="nav_item">Blog</div>
+            </nav>
+            <div id="search_cart">
+                <form action="POST">
+                    <input type="text" id="search_tool" placeholder="Search" >
+                    <div class="icon">
+                        <input type="image" src="../photo/search-interface-symbol.png" id="search">
+                    </div>
+                </form>
+                <div class="icon" id="account" account><img src="../photo/user.png" alt="user"></div>
+                <div class="icon" id="cart" >
+                    <div class="icon" id="cart" >
+                        <img src="../photo/shopping-cart.png" alt="cart">
+                        <div id="cart_item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="menu" id="collapse">
+        <div class="filter">
+            <h2>Genre</h2>
+            <ul class="Genre">
+                <li><a href="literature.html">Literature</a></li>
+                <li><a href="Business.html">Business</a></li>
+                <li><a href="literature.html">Comic</a></li>
+                <li><a href="Business.html">Self-help</a></li>
+                <li><a href="literature.html">Textbook</a></li>
+                <li><a href="Business.html">Magazines</a></li>
+                <li><a href="literature.html">Encyclopedia</a></li>
+                <li><a href="Business.html">Sociology</a></li>
+                
+
+                
+            </ul>
+        </div>
+        <div class="filter">
+            <h2>Author</h2>
+            <ul class="Author">          
+                <li class="categ"><a href="literature.html">J.K.Rowling</a></li>
+                <li class="categ"><a href="Business.html">Marukami Haruki</a></li>
+                <li class="categ"><a href="literature.html">Napoleon Hill</a></li>
+                <li class="categ"><a href="Business.html">Peter Drucker</a></li>
+                <li class="categ"><a href="literature.html">Warren Buffett</a></li>
+                <li class="categ"> <a href="Business.html">Alan Moore</a>  </li>
+                <li class="categ"><a href="literature.html">Oda Eiichiro</a> </li>
+            </ul>
+        </div>
+        <div class="filter">
+            <h2>Country</h2>
+            <ul>
+                <li class="categ"><a href="literature.html">America</a></li>
+                <li class="categ"><a href="Business.html">British</a></li>
+                <li class="categ"><a href="literature.html">France</a></li>
+                <li class="categ"><a href="Business.html">Germany</a></li>
+                <li class="categ"><a href="literature.html">Japan</a></li>
+            </ul>
+            
+            
+        </div>
+        <div class="filter">
+            <h2>Book Format</h2>
+            <ul>
+                <li class="categ"><a href="literature.html">Hardcover</a></li>
+                <li class="categ"><a href="Business.html">Paperback</a></li>
+                <li class="categ"><a href="literature.html">Audiobook</a></li>
+                <li class="categ"><a href="Business.html">Ebook</a></li>
+            </ul>
+        </div class="filter">
+    </header>
+    <main>
+        <div id="directory">
+            <a href="index.html">Home &nbsp;</a><span>></span><a href="literature.html">&nbsp;Literature</a>
+        </div>
+        <content id="main_container">
+            <section id="selection">
+                <div id="image_selection">
+                    <div id="image_navigation">
+                        <div class="image"><img class="img portrait" src="../photo/first_image.png" alt="portrait"></div>
+                        <div class="image"><img class="img landscape" src="../photo/second_image.png" alt="landscape"></div>
+                        <div class="image"><img class="img landscape" src="../photo/third_image.png" alt="landscape"></div>
+                    </div>
+                    <div id="big_image" style="display: flex; align-items: center;">
+                        <img id="main_image" src="../photo/first_image.png" alt="">
+                    </div>
+                    
+                </div>
+                <div id="features_selection">
+                    <div id="book_title">
+                        <h2>Wuthering Height</h2>
+                        <span> <a id="book_author" href="">By Emily Bronte</a> </span>
+                        <div id="book_rating">
+
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <div id="price_formats">
+                        <h2 id="price">$29 USD</h2>
+                        <div id="formats_selection">
+                            <button class="book_format">Paperback</button >
+                            <button class="book_format">Hardcover</button>
+                            <button class="book_format">Ebook</button>
+                        </div>
+                    </div>
+                    <div id="check_availability">
+                        <div class="grid" id="delivery_option" >
+                            <div>
+                                <input type="radio" name="Pick up" id="Pickup" checked>
+                                <label for="">Pick up</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="Pick up" id="Delivery">
+                                <label for="">Delivery</label>
+                            </div>
+                            <form id="check_store" >
+                                <label for="Store_location">Please choose your store:</label>
+                                <select name="Store_location" id="Store_location">
+                                    <option value="Carlton">Carlton</option>
+                                    <option value="Frankston">Frankston</option>
+                                    <option value="Footscray">Footscray</option>
+                                    <option value="Sunshine West" >Sunshine West</option>
+                                </select>
+                                <div id="stock_condition" style="color: red; margin-top: 5px;">Sorry, no stock is available at your chosen store</div>
+                            </form>
+                        </div>
+                        <div class="grid" id="buy_button" >
+                            <button>Buy Now</button>
+                            <button class="add_to_cart_button">Add to Cart</button>
+                            <button>Add to Wish list</button>
+                            
+                        </div>
+                        
+                        
+                    </div> 
+                </div>
+            </section>
+            <section id="Description_Author">
+                <content id="Book_Description">
+                    <div class="title_housing" >
+                        <button>
+                            <h2 class="Description_title">Description</h2>
+                            <span class="second_line"></span>
+                        </button>
+                        
+                    </div>
+                    <article class="describing_article" id="book_description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui unde enim cumque, dolor eligendi ipsam amet optio nisi nam. Neque cumque consequuntur vitae explicabo sit reiciendis porro excepturi eius exercitationem?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa iure dolorem illum similique debitis quisquam repudiandae id, necessitatibus, ducimus, blanditiis nulla officiis maxime molestias inventore! Porro magni obcaecati dolore maxime?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repellendus enim at cumque ullam pariatur vitae, deleniti iusto aut, culpa molestias porro officiis illo quod alias, voluptas atque ut iure?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, tenetur. Qui vel omnis laborum tempore nulla laudantium dolorem quod cum rerum. Aut voluptatum asperiores sed accusantium praesentium suscipit quo hic!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorum aliquam quod vel adipisci deserunt dolore placeat nihil nobis voluptas inventore magni voluptates voluptatum possimus, quo sit ratione a ut?
+                    </article>
+
+                    
+                </content>
+
+                <content id="Author_Description">
+                    <div class="title_housing" >
+                        <button> 
+                            <h2 class="Description_title">About the Author</h2>
+                            <span class="second_line"></span></button>
+                       
+                    </div>
+                    <article class="describing_article" id="author_description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui unde enim cumque, dolor eligendi ipsam amet optio nisi nam. Neque cumque consequuntur vitae explicabo sit reiciendis porro excepturi eius exercitationem?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa iure dolorem illum similique debitis quisquam repudiandae id, necessitatibus, ducimus, blanditiis nulla officiis maxime molestias inventore! Porro magni obcaecati dolore maxime?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repellendus enim at cumque ullam pariatur vitae, deleniti iusto aut, culpa molestias porro officiis illo quod alias, voluptas atque ut iure?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, tenetur. Qui vel omnis laborum tempore nulla laudantium dolorem quod cum rerum. Aut voluptatum asperiores sed accusantium praesentium suscipit quo hic!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorum aliquam quod vel adipisci deserunt dolore placeat nihil nobis voluptas inventore magni voluptates voluptatum possimus, quo sit ratione a ut?
+                    </article>
+
+                    
+                </content>
+
+            </section>
+        </content>
+    </main>
+    <footer>
+        <form id="Newsletter" action="POST">
+            <label style="color: antiquewhite;" for="Emai_bar">Sign Up for Exclusive Offers and News </label>
+            <div id="Email_submit">
+                <input type="text" placeholder="Email" id="Email_bar" name="Email_bar">
+                <input type="image" src="../photo/right-arrow.png" id="Submitting">
+            </div>
+            
+        </form>
+        <div id="FAQ_and_Payment">
+            <h2 style="color: antiquewhite;">For more information</h2>
+            <nav class="footer_nav">
+                <div><a class="footer_link" href="contact_form.html">About us</a> </div>
+                <div><a class="footer_link"  href="contact_form.html">Help</a></div>
+                <div><a class="footer_link" href="contact_form.html">Contact us</a></div>
+                <div><a class="footer_link" href="contact_form.html">Careers</a></div>
+            </nav>
+            
+            
+        </div>
+    </footer>
+    <script src="../javascript/Book_detail.js"></script>
+    <script src="../javascript/update_cart.js"></script>
+</body>
+</html>
