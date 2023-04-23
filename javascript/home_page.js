@@ -20,17 +20,18 @@ const ratings = document.getElementById("ratings")
 const comment_container = document.getElementById("comment_container")
 const comment = document.querySelectorAll(".comment")
 const read_more = document.getElementById("read_more_btn")
+const customer_comment = document.querySelector(".customer_comment")
 const customer_review = document.getElementById("customer_review")
 const left_review = document.querySelector(".left_review")
 const right_review = document.querySelector(".right_review")
-const carousel_array =[`<div class="element" style="background-image: url(photo/book_background.png); background-size:cover">
+const carousel_array =[`<div class="element" style="background-image: url(../photo/book_background.png); background-size:cover">
                         </div>`, 
-                        `<div class="element" style="background-image: url(photo/business_background.png); background-size:cover"> 
+                        `<div class="element" style="background-image: url(../photo/business_background.png); background-size:cover"> 
                         </div>`,
-                        `<div class="element" style="background-image: url(photo/literature_background.png); background-size:cover">
+                        `<div class="element" style="background-image: url(../photo/literature_background.png); background-size:cover">
                         </div>`,
                         `<div class="element">
-                            <video src="photo/y2mate.com - Rick Astley  Never Gonna Give You Up Official Music Video_720p.mp4" controls="control autoplay"></video>
+                            <video src="../photo/y2mate.com - Rick Astley  Never Gonna Give You Up Official Music Video_720p.mp4" controls="control autoplay"></video>
                         </div>`]
 
 
@@ -125,29 +126,29 @@ const phone_collapsed =
    
 
   
-    function tablet_media_query(x){
-        if (x.matches){
-            drop_down_nav.addEventListener("mouseover", function(){
-                lower_heading.style.display="flex"
-            })
-            
-            lower_heading.addEventListener("mouseleave",function(){
-                lower_heading.style.display="none"}) 
-            
-            customer_review.style.height="40vh"
-            comment_container.style.height="calc(40vh - 124px 10px - 42px)"
-            customer_comment.style.height="calc(40vh - 124px)"
-        }
-        else {
+function tablet_media_query(x){
+    if (x.matches){
+        drop_down_nav.addEventListener("mouseover", function(){
             lower_heading.style.display="flex"
-            lower_heading.addEventListener("mouseleave",function(){
-                lower_heading.style.display="flex"}) 
-            customer_review.style.height="30vh"
-            comment_container.style.height="calc(30vh - 10px - 42px)"
-            customer_comment.style.height="100%"
-            
-        }
+        })
+        
+        lower_heading.addEventListener("mouseleave",function(){
+            lower_heading.style.display="none"}) 
+        
+        customer_review.style.height="40vh"
+        comment_container.style.height="calc(40vh - 124px 10px - 42px)"
+        customer_comment.style.height="calc(40vh - 124px)"
     }
+    else {
+        lower_heading.style.display="flex"
+        lower_heading.addEventListener("mouseleave",function(){
+            lower_heading.style.display="flex"}) 
+        customer_review.style.height="30vh"
+        comment_container.style.height="calc(30vh - 10px - 42px)"
+        customer_comment.style.height="100%"
+        
+    }
+}
 function media_query(x){
     if (x.matches){
         collapsed_heading.style.display="none"
@@ -214,7 +215,12 @@ function media_query(x){
         
     }}
 
+media_query(mediaquery_phone)
 
+mediaquery_phone.addEventListener("change", media_query)
+tablet_media_query(mediaquery_tablet)
+
+mediaquery_tablet.addEventListener("change", tablet_media_query)
 
 for (let i = 0; i<button.length; i++){
     button[i].addEventListener("click",function(){
@@ -274,13 +280,14 @@ for (let i=0; i<right.length; i++){
 }
 
 
+
 function read_more_less(){
     for (let i =0; i<comment.length;i++){
         if (comment[i].clientHeight > comment_container.clientHeight){
             read_more.style.visibility="visible"
             let x = customer_review.clientHeight 
             let y = comment_container.clientHeight
-            
+            let z = customer_comment.clientHeight
             let before_height = x.toString() + "px"
             let before_height_container = y.toString() + "px"
             read_more.addEventListener("click",function(){
@@ -307,14 +314,16 @@ function read_more_less(){
     }  
         
         
-}
+    }
 
 
 read_more_less()
 window.onresize=read_more_less
 media_query(mediaquery_phone)
+
 mediaquery_phone.addEventListener("change", media_query)
 tablet_media_query(mediaquery_tablet)
+
 mediaquery_tablet.addEventListener("change", tablet_media_query)
 
 
