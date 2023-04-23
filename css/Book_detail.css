@@ -344,7 +344,7 @@ ul::-webkit-scrollbar-thumb:hover{
     align-items: center;
     gap: 10px;
     padding-bottom: 10px;
-    padding-left: 50px;
+    padding-left: 20px;
     
 }
 #book_title{
@@ -391,6 +391,8 @@ ul::-webkit-scrollbar-thumb:hover{
     height: 50px;
     width: 95px;
     border: none;
+    background-color: white;
+    color: black;
 }
 
 .book_format:first-child{
@@ -424,6 +426,7 @@ ul::-webkit-scrollbar-thumb:hover{
     width: 200px;
     height: 40px;
     background-color: white;
+    color: black;
 }
 
 #buy_button button:hover{
@@ -456,6 +459,7 @@ ul::-webkit-scrollbar-thumb:hover{
 .Description_title{
     font-family: 'Playfair Display', serif;
     display: inline-block;
+    color: black;
 }
 
 .Description_title::after{
@@ -856,5 +860,6 @@ footer{
         padding-left: 5px;
         padding-right: 5px;
     }
+    
     
     }
