@@ -125,21 +125,29 @@ const phone_collapsed =
    
 
   
-function tablet_media_query(x){
-    if (x.matches){
-        drop_down_nav.addEventListener("mouseover", function(){
+    function tablet_media_query(x){
+        if (x.matches){
+            drop_down_nav.addEventListener("mouseover", function(){
+                lower_heading.style.display="flex"
+            })
+            
+            lower_heading.addEventListener("mouseleave",function(){
+                lower_heading.style.display="none"}) 
+            
+            customer_review.style.height="40vh"
+            comment_container.style.height="calc(40vh - 124px 10px - 42px)"
+            customer_comment.style.height="calc(40vh - 124px)"
+        }
+        else {
             lower_heading.style.display="flex"
-        })
-        
-        lower_heading.addEventListener("mouseleave",function(){
-            lower_heading.style.display="none"}) 
+            lower_heading.addEventListener("mouseleave",function(){
+                lower_heading.style.display="flex"}) 
+            customer_review.style.height="30vh"
+            comment_container.style.height="calc(30vh - 10px - 42px)"
+            customer_comment.style.height="100%"
+            
+        }
     }
-    else {
-        lower_heading.style.display="flex"
-        lower_heading.addEventListener("mouseleave",function(){
-            lower_heading.style.display="flex"}) 
-    }
-}
 function media_query(x){
     if (x.matches){
         collapsed_heading.style.display="none"
@@ -206,12 +214,7 @@ function media_query(x){
         
     }}
 
-media_query(mediaquery_phone)
 
-mediaquery_phone.addEventListener("change", media_query)
-tablet_media_query(mediaquery_tablet)
-
-mediaquery_tablet.addEventListener("change", tablet_media_query)
 
 for (let i = 0; i<button.length; i++){
     button[i].addEventListener("click",function(){
@@ -271,19 +274,20 @@ for (let i=0; i<right.length; i++){
 }
 
 
-
 function read_more_less(){
     for (let i =0; i<comment.length;i++){
         if (comment[i].clientHeight > comment_container.clientHeight){
             read_more.style.visibility="visible"
             let x = customer_review.clientHeight 
             let y = comment_container.clientHeight
+            let z = customer_comment.clientHeight
             let before_height = x.toString() + "px"
             let before_height_container = y.toString() + "px"
             read_more.addEventListener("click",function(){
                 if (read_more.textContent=="Read More"){
                     read_more.addEventListener("click",function(){
-                        
+                        customer_review.style.height="fit-content"
+                        customer_comment.style.height="fit-content"
                         comment_container.style.height="fit-content"
                         read_more.textContent="Read less"
                 })}
@@ -303,11 +307,15 @@ function read_more_less(){
     }  
         
         
-    }
+}
 
 
 read_more_less()
 window.onresize=read_more_less
+media_query(mediaquery_phone)
+mediaquery_phone.addEventListener("change", media_query)
+tablet_media_query(mediaquery_tablet)
+mediaquery_tablet.addEventListener("change", tablet_media_query)
 
 
 
