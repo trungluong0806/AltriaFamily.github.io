@@ -232,10 +232,4 @@ for (let i=0; i<right.length; i++){
             behavior: "smooth"
             })
     })
-
-
-
-
-
-
 }
