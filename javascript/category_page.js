@@ -126,6 +126,7 @@ const phone_collapsed =
     </div>
     `
 
+    console.log(right)
   
 function tablet_media_query(x){
     if (x.matches){
