@@ -22,7 +22,7 @@ input{
     font-size: 16px;
 }
 #announcement{
-    height: 4vh;
+    height: 30px;
     background-image: linear-gradient(to right, rgba(114, 59, 33, 0.521), rgb(162, 38, 38), rgba(54, 44, 44, 0.663)), url(../photo/logo_background.png);
     display: flex;
     align-items: center;
@@ -51,7 +51,7 @@ input{
 
 #upper_heading{
     width: 100vw;
-    height: 12vh;
+    height: 100px;
     
 }
 
@@ -94,7 +94,7 @@ h1{
 
 
 #lower_heading{
-    height: 6vh;
+    height: 50px;
     width: 100vw;
     display: none;
     font-family: 'Playfair Display', serif;;
@@ -520,7 +520,7 @@ ul::-webkit-scrollbar-thumb:hover{
 
 footer{
     background-color: rgb(22, 85, 85);
-    height: 20vh;
+    height: 150px;
     margin-top: 30px;
     display: flex;
     
@@ -654,7 +654,7 @@ footer{
     }
     footer{
         flex-direction: column;
-        height: 30vh;
+        height: 220px;
     }
 
     #Newsletter{
