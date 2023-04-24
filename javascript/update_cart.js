@@ -1,3 +1,10 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Luong Thanh Trung
+ID: S3679813
+Acknowledgement: the images used here were borrowed from other webpages. Their links could be found in the report  */
 let no_item = parseInt(localStorage.getItem('number_of_items_in_cart'));
 
 const add_to_cart_buttons = document.querySelectorAll(".add_to_cart_button")
