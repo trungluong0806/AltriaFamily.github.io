@@ -789,7 +789,9 @@ footer{
     }
 
     
-
+    #phone_categories{
+        width: 105px;
+    }
 
     #phone_categories:hover{
         background-color: teal;
