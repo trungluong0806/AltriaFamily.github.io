@@ -330,18 +330,19 @@ video{
 
 .textbox{
     position: absolute;
-    width: 300px;
+    width: 500px;
     height: 100px;
     background-color: rgba(59, 57, 57, 0.724);
-    left: calc((100vw - 300px)/2);
+    left: calc((100vw - 500px)/2);
     top: calc((520px - 100px)/2);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     font-family: 'Dancing Script', cursive;
     color: #e0d8ad;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3);
     
 }
 
@@ -829,6 +830,12 @@ footer{
 }
 
 @media screen and (max-width: 500px){
+    .textbox{
+        font-size: 28px;
+        width: 300px;
+        left: calc((100vw - 300px)/2);
+
+    }
     
     #logo_container{
         justify-content: flex-start;
