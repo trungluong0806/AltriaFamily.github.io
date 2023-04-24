@@ -34,7 +34,7 @@ const carousel_array =[`<div class="element" style="background-image: url(photo/
                             <div class="textbox">Welcome To The Altria Bookstore</div>
                         </div>`,
                         `<div class="element">
-                            <video src="photo/y2mate.com - Rick Astley  Never Gonna Give You Up Official Music Video_720p.mp4" controls="control autoplay"></video>
+                            <video src="photo/y2mate.com - 3 Quick Tips for Collecting Antiquarian Books  Who Knew  ANTIQUES ROADSHOW  PBS_480p.mp4" controls="control autoplay"></video>
                         </div>`]
 
 
