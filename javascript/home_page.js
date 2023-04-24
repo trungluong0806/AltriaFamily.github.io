@@ -138,16 +138,16 @@ function tablet_media_query(x){
         lower_heading.addEventListener("mouseleave",function(){
             lower_heading.style.display="none"}) 
         
-        customer_review.style.height="40vh"
-        comment_container.style.height="calc(40vh - 124px 10px - 42px)"
-        customer_comment.style.height="calc(40vh - 124px)"
+        customer_review.style.height="300px"
+        comment_container.style.height="calc(300px - 124px 10px - 42px)"
+        customer_comment.style.height="calc(300px - 124px)"
     }
     else {
         lower_heading.style.display="flex"
         lower_heading.addEventListener("mouseleave",function(){
             lower_heading.style.display="flex"}) 
-        customer_review.style.height="30vh"
-        comment_container.style.height="calc(30vh - 10px - 42px)"
+        customer_review.style.height="220px"
+        comment_container.style.height="calc(220px - 10px - 42px)"
         customer_comment.style.height="100%"
         
     }
